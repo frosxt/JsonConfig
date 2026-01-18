@@ -92,7 +92,7 @@ implementation("com.github.frosxt.JsonConfig:jsonconfig-gson:v1.0.1")
 
 ## Documentation
 
-Documentation will be available on the GitHub Wiki.
+Documentation is available on the [Wiki](https://github.com/frosxt/JsonConfig/wiki)
 
 ## License
 
