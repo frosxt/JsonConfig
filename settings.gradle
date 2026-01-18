@@ -1,0 +1,4 @@
+rootProject.name = 'jsonconfig'
+include 'jsonconfig-core'
+include 'jsonconfig-gson'
+include 'jsonconfig-jackson'
