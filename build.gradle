@@ -3,8 +3,8 @@ plugins {
 }
 
 allprojects {
-    group = 'com.github.frosxtt'
-    version = '1.0.0-SNAPSHOT'
+    group = 'com.github.frosxt'
+    version = 'v1.0.0'
 
     repositories {
         mavenCentral()
