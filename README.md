@@ -11,7 +11,7 @@ Most JSON libraries (like Gson or Jackson) force you to map your JSON data direc
 *   **Thread Safety**: If you need to access configs from multiple threads, use the provided `ConcurrentJsonConfiguration`. It uses ReadWriteLocks to ensure safe reads and writes.
 *   **Config Merging**: Easily update user configurations by merging them with bundled defaults. Strategies include:
     *   `OVERWRITE`: Replace values completely.
-    *   `DEEP_MERGE_OBJECTS`: recurses into objects to merge new keys while preserving existing ones.
+    *   `DEEP_MERGE_OBJECTS`: Recurses into objects to merge new keys whilst preserving existing ones.
     *   `CONCAT_ARRAYS`: Appends new array elements to existing lists.
 *   **Strict Compliance**: The parser adheres strictly to the JSON standard, ensuring files are always valid JSON.
 *   **Optional Integrations**: If you already use Gson or Jackson in your project, optional modules allow seamless conversion between their types and JsonConfig types.
