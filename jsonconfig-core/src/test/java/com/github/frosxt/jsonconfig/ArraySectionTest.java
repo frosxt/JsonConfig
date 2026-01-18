@@ -17,7 +17,7 @@ public class ArraySectionTest {
         assertTrue(root.isSection("list[0]"), "list[0] should be a section (JsonObject)");
         assertNotNull(root.getNode("list[0]"), "Node at list[0] should exist");
 
-        // Fails correctly?
+        // Verify section retrieval
         JsonSection sec = root.getConfigurationSection("list[0]");
         assertNotNull(sec, "Should be able to get section from array index");
         assertEquals("John", sec.getString("name"));
@@ -26,10 +26,10 @@ public class ArraySectionTest {
         assertEquals(root, sec.getParent(), "Parent of list[0] should be root (nearest section)");
 
         // Canonical format check
-        // We prefer "list[0]" over "list.0" for array elements
+        // "list[0]" is preferred over "list.0" for array elements
         assertEquals("list[0]", sec.getCurrentPath());
 
-        // get() integration
+        // test get() returning Queryable
         Object val = root.get("list[0]");
         assertTrue(val instanceof JsonSection, "get() should return JsonSection for objects in arrays");
         assertEquals("John", ((JsonSection) val).getString("name"));

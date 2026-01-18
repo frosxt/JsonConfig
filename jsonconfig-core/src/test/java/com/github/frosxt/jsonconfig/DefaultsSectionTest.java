@@ -13,7 +13,7 @@ public class DefaultsSectionTest {
         JsonConfiguration defs = JsonConfigurations.load(new StringReader("{\"sec\": {\"val\": 1}}"));
         root.setDefaults(defs);
 
-        // Option A: Defaults apply to scalar getters, but not to sections.
+        // Defaults apply to scalar getters, but not to sections.
         assertNull(root.getConfigurationSection("sec"), "getConfigurationSection should not return defaults");
 
         Object sec = root.get("sec");
@@ -22,7 +22,7 @@ public class DefaultsSectionTest {
         // Scalars still work
         assertEquals(1, root.getInt("sec.val"), "Scalars should resolve through defaults");
 
-        // Wait, isSet checks local only. contains checks defaults.
+        // isSet checks local existence only, while contains checks defaults.
         assertTrue(root.contains("sec.val"), "contains should be true for default scalars");
         assertFalse(root.isSet("sec.val"), "isSet should be false for defaults");
     }

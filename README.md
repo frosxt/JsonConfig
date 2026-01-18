@@ -19,7 +19,7 @@ Most JSON libraries (like Gson or Jackson) force you to map your JSON data direc
 
 ## Installation
 
-This library is available via [JitPack](https://jitpack.io).
+This library is available via [JitPack](https://jitpack.io/#frosxt/JsonConfig).
 
 ### Gradle (Groovy)
 ```groovy
@@ -29,7 +29,7 @@ repositories {
 }
 
 dependencies {
-    implementation 'com.github.frosxt:JsonConfig:v1.0.0'
+    implementation 'com.github.frosxt:JsonConfig:v1.0.1'
 }
 ```
 
@@ -41,7 +41,7 @@ repositories {
 }
 
 dependencies {
-    implementation("com.github.frosxt:JsonConfig:v1.0.0")
+    implementation("com.github.frosxt:JsonConfig:v1.0.1")
 }
 ```
 
@@ -57,7 +57,7 @@ dependencies {
 <dependency>
     <groupId>com.github.frosxt</groupId>
     <artifactId>JsonConfig</artifactId>
-    <version>v1.0.0</version>
+    <version>v1.0.1</version>
 </dependency>
 ```
 
@@ -66,8 +66,8 @@ If you only want specific modules (e.g., just the core library vs the full repo)
 
 **Gradle:**
 ```kotlin
-implementation("com.github.frosxt.JsonConfig:jsonconfig-core:v1.0.0")
-implementation("com.github.frosxt.JsonConfig:jsonconfig-gson:v1.0.0")
+implementation("com.github.frosxt.JsonConfig:jsonconfig-core:v1.0.1")
+implementation("com.github.frosxt.JsonConfig:jsonconfig-gson:v1.0.1")
 ```
 
 **Maven:**
@@ -75,7 +75,7 @@ implementation("com.github.frosxt.JsonConfig:jsonconfig-gson:v1.0.0")
 <dependency>
     <groupId>com.github.frosxt.JsonConfig</groupId>
     <artifactId>jsonconfig-core</artifactId>
-    <version>v1.0.0</version>
+    <version>v1.0.1</version>
 </dependency>
 ```
 

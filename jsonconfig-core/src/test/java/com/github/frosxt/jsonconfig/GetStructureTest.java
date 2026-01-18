@@ -13,7 +13,7 @@ public class GetStructureTest {
         String json = "{\"a\": {\"b\": {\"c\": 1}}}";
         JsonConfiguration root = JsonConfigurations.load(new StringReader(json));
 
-        // get("a.b") returns an Object. If it's a section, it should be a JsonSection.
+        // Ensure get() returns a strict JsonSection for object nodes.
         Object result = root.get("a.b");
         assertTrue(result instanceof JsonSection, "get('a.b') should return a JsonSection");
 
