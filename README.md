@@ -19,7 +19,7 @@ Most JSON libraries (like Gson or Jackson) force you to map your JSON data direc
 
 ## Installation
 
-This library is available via [JitPack](https://jitpack.io).
+This library is available via [JitPack](https://jitpack.io/#frosxt/JsonConfig).
 
 ### Gradle (Groovy)
 ```groovy
